@@ -1,0 +1,64 @@
+@charset "UTF-8";
+@import url(variables.css);
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+}
+
+body {
+    background: var(--img-foundsite) bottom center no-repeat fixed;
+    background-size: cover;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+}
+
+section#cellphone {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 630px;
+    width: 310px;
+    background: var(--img-borderiphone) no-repeat;
+}
+
+iframe#screen-home {
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+    top: 80px;
+    left: 22px;
+    height: 472px;
+    width: 267px;
+    border-radius: 3px;
+}
+
+section#socials-medias {
+    text-align: right;
+    padding: 14px 14px 0px 0px;
+}
+
+section#socials-medias > a > img {
+    width: 50px;
+    border-radius: 50%;
+    margin: 7px 7px 7px 0px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.400);
+    box-sizing: border-box;
+}
+
+section#socials-medias > a > img:hover {
+    border: 2.5px solid white;
+    transform: translate(-3px, -3px);
+    transition: transform 0.25s, border 0.25s;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.700);
+}
